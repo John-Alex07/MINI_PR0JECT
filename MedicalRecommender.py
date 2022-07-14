@@ -2,6 +2,7 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 import nltk
+nltk.download()
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
