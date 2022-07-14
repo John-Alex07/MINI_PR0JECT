@@ -72,7 +72,7 @@ if load:
 
     nxt_report = st.checkbox("For further Survey")
     if nxt_report:
-        df = pd.read_csv("J:\\Study Material\\Mini Project-Sem 4\\Training.csv")
+        df = pd.read_csv("https://raw.githubusercontent.com/John-Alex07/MINI_PR0JECT/main/Training.csv")
 
         question_set = []
         for i in df.columns:
