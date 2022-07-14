@@ -6,7 +6,7 @@ from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 
-nltk.download('stopwords')
+nltk.download('d')
 st.title("Medical Test Recommender")
 
 load = st.checkbox("CHECK TO LOAD")
