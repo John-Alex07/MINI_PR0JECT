@@ -12,7 +12,7 @@ load = st.checkbox("CHECK TO LOAD")
 if load:
     @st.cache(allow_output_mutation=True)
     def load_data():
-        df1 = pd.read_csv("J:\\Study Material\\Mini Project-Sem 4\\df_diseases.csv", index_col='Unnamed: 0')
+        df1 = pd.read_csv("https://raw.githubusercontent.com/John-Alex07/MINI_PR0JECT/main/df_diseases.csv", index_col='Unnamed: 0')
         dat = df1.drop(columns='link')
         dat.fillna("Unknown", inplace=True)
         return dat
