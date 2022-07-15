@@ -28,7 +28,7 @@ if load:
     def stop_word_add():
         st_wrd = stopwords.words('english')
         li = ["Unknown", ",", ".", "'", "`", "[", "]", "(", ")", 'The', ":", "include", 'sometimes', 'signs', 'sign',
-              'symptoms', 'doctor', 'may', 'See', 'worry', ' ', '"' ]
+              'symptoms', 'doctor', 'may', 'See', 'worry', ' ', '"', '\n', '\t' ]
         for l_i in li:
             st_wrd.append(l_i)
             return st_wrd
