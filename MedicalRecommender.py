@@ -27,8 +27,8 @@ if load:
     @st.cache
     def stop_word_add():
         st_wrd = stopwords.words('english')
-        li = ["Unknown", ",", ".", "'", "``", "[", "]", "(", ")", 'The', ":", "include", 'sometimes', 'signs', 'sign',
-              'symptoms', 'doctor', 'may', 'See', 'worry']
+        li = ["Unknown", ",", ".", "'", "`", "[", "]", "(", ")", 'The', ":", "include", 'sometimes', 'signs', 'sign',
+              'symptoms', 'doctor', 'may', 'See', 'worry', ' ', '"' ]
         for l_i in li:
             st_wrd.append(l_i)
             return st_wrd
@@ -56,7 +56,7 @@ if load:
         for check_word in data['symptoms'][i]:
             if check_word in symptoms_patient:
                 count = count + 1
-        if count >= (len(symptoms_patient) * 0.9):
+        if count == (len(symptoms_patient)):
             final_report.append(i)
 
     disease_report = []
