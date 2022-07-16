@@ -56,7 +56,7 @@ if load:
         for check_word in data['symptoms'][i]:
             if check_word in symptoms_patient:
                 count = count + 1
-        if count >= (len(symptoms_patient)*0.9):
+        if count >= (len(symptoms_patient)*0.93):
             final_report.append(i)
 
     disease_report = []
