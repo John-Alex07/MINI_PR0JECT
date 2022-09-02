@@ -22,7 +22,7 @@ if load:
     @st.cache(allow_output_mutation=True)
     def load_data():
         time.sleep(2)
-        dat = pd.read_csv("https://raw.githubusercontent.com/John-Alex07/MINI_PR0JECT/main/movies.csv",
+        dat = pd.read_csv("https://raw.githubusercontent.com/John-Alex07/MINI_PR0JECT/Datasets/movies.csv",
                           index_col='movieId')
         return dat
 
