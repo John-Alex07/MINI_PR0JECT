@@ -75,7 +75,7 @@ if load:
         if check_process:
             @st.cache(allow_output_mutation=True)
             def load_data0():
-                ratings = 'https://raw.githubusercontent.com/John-Alex07/MINI_PR0JECT/main/ratings.csv'
+                ratings = 'https://raw.githubusercontent.com/John-Alex07/MINI_PR0JECT/Datasets/ratings.csv'
                 movie_rat0 = pd.read_csv(ratings, index_col='movieId', usecols=['movieId', 'rating'])
                 movie_rat0 = movie_rat0.sort_values(by='rating', ascending=False)
                 return movie_rat0
